@@ -203,7 +203,7 @@ public class App implements IApp{
 		
 	public void moving(String target,ILinkedList mails)
 	{
-		String current=target;
+		String current=target+"\\";
 		File test=new File(target);
 				if(test.exists())
 				{
@@ -252,6 +252,9 @@ public class App implements IApp{
 		if(email.length()==0 || password.length()==0)
 		{
 			JOptionPane.showMessageDialog(null,"Either the Email or Password fields is left blank");
+			return false;
+		}
+		else if(!checkEmail(email)) {
 			return false;
 		}
 		File existingEmail=new File("Accounts\\"+ email);
