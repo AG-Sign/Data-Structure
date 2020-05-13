@@ -139,7 +139,7 @@ public class InboxGui extends JFrame {
 			contentPane.add(btnNewButton_2);
 			
 			JComboBox comboBox_1 = new JComboBox();
-			comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"Default", "Date","From","Subject","Priority"}));
+			comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"Default", "Date", "From", "Subject"}));
 			comboBox_1.setRenderer(new MyComboBoxRenderer("Sort By"));
 	        comboBox_1.setSelectedIndex(-1);
 			comboBox_1.setBounds(653, 11, 76, 22);
@@ -212,9 +212,7 @@ public class InboxGui extends JFrame {
 				sort.setSo("subject");
 				break;
 				
-			case 4 :
-				sort.setSo("priority");
-				break;
+			
 			
 			}
 			DefaultTableModel model1 = (DefaultTableModel) table.getModel();
@@ -328,9 +326,6 @@ public class InboxGui extends JFrame {
 				sort.setSo("subject");
 				break;
 				
-			case 4 :
-				sort.setSo("priority");
-				break;
 			
 			}
 			DefaultTableModel model1 = (DefaultTableModel) table.getModel();
@@ -453,9 +448,7 @@ public class InboxGui extends JFrame {
 					sort.setSo("subject");
 					break;
 					
-				case 4 :
-					sort.setSo("priority");
-					break;
+				
 				
 				}
 				DefaultTableModel model = (DefaultTableModel) table.getModel();
@@ -511,9 +504,7 @@ public class InboxGui extends JFrame {
 				case 3 :
 					sort.setSo("subject");
 					break;
-				case 4 :
-					sort.setSo("priority");
-					break;
+				
 				
 				}
 				page--;
@@ -564,9 +555,7 @@ public class InboxGui extends JFrame {
 					sort.setSo("subject");
 					break;
 					
-				case 4 :
-					sort.setSo("priority");
-					break;
+				
 				
 				}
 				App ap = new App();
